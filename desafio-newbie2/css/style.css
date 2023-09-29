@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2ebe3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #6c7289;
+}
+
+.container{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.container .image{
+    width: 50%;
+    display: block;
+}
+
+.container .image img{
+    width: 100%;
+    
+}
+
+.container .image img.mobile{
+    display: none;
+}
+
+.container .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px;
+}
+
+.container .text h6{
+    color: #6c7289;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+
+.container .text h1{
+    color: #1c232b;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.container .text p{
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+.container .text h2{
+    color: #3c8067;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 32px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.container .text h2 span{
+    color: #6c7289;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.container .text a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: #3c8067;
+    line-height: 48px;
+    border-radius: 8px;
+    margin-top: 26px;
+    transition: 200ms;
+}
+.container .text a:hover{
+    background-color: #1A4031;
+}
+.container .text a img{
+    display: block;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        height: auto;
+        padding: 16px 28px;
+        overflow: hidden;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container .image{
+        width: 100%;
+    }
+    .container .image img.desktop{
+        display: none;
+    }
+    .container .image img.mobile{
+        display: block;
+    }
+    .container .text{
+        width: 100%;
+        padding: 25px;
+    }
+}
