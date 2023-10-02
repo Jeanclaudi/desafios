@@ -82,8 +82,7 @@ body{
 
 .container .text h2 span{
     color: #6c7289;
-    font-size: 14px;
-    font-weight: normal;
+    font: normal 14px 'Montserrat', sans-serif;
     text-decoration: line-through;
 }
 
