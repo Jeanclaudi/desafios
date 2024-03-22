@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'figtree italic';
+    src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family:  'figtree var';
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Figtree-ExtraBold';
+    src: url(../assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Figtree-SemiBold';
+    src: url(../assets/fonts/static/Figtree-SemiBold.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.content {
+    width: 350px;
+    height: 530px;
+    background-color: white;
+    padding-left: 30px;
+    border: solid 2px black;
+    border-radius: 25px;
+    box-shadow: 15px 15px 1px black;
+    cursor: pointer;
+}
+
+.gg {
+    width: 92%;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+h2 {
+    font-family: 'figtree var';
+    color: hsl(47, 88%, 63%);
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Figtree-SemiBold';
+}
+
+p.efeito {
+    width: 75px;
+    font-family: 'Figtree-ExtraBold';
+    padding: 6px;
+    text-indent: 5px;
+    border-radius: 6px;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Figtree-ExtraBold';
+    padding-top: 30px;
+    margin: 0;
+}
+
+.avatar {
+    height: auto;
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+p.text {
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+    line-height: 25px; 
+    font-family: 'Figtree var';
+    margin-bottom: -30px;
+}
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        height: 550px;
+        width: 300px;
+        padding-right: 30px;
+    }
+    p.efeito {
+        font-size: 13px;
+        width: 62px;
+        margin-top: 25px;
+        padding: 6px;
+        text-indent: 5px;
+    }
+    .gg {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-family: 'Figtree-ExtraBold';
+        font-size: 22px;
+        color: black;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    p.text {
+        font-size: 15px;
+        color: hsl(0, 0%, 50%);
+        line-height: 25px; 
+        font-family: 'figtree var';
+        font-weight: 500;
+        margin-bottom: -30px;
+    }
+}
