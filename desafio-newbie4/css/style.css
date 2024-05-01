@@ -26,7 +26,6 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
     font-size: 16px;
     background-color: hsl(30, 54%, 90%);
     padding: 0;
@@ -35,6 +34,7 @@ body {
 }
 
 main {
+    height: auto;
     width: 500px;
     background-color: white;
     border-radius: 16px;
@@ -132,15 +132,17 @@ td.cor {
     }
 
     main {
-        width: 100%; /* Ocupa toda a largura disponível */
-        box-sizing: border-box; /* Considera padding e borda na largura total */
+        height: 100%;
+        width: 100%; 
+        overflow-y: auto;
+        box-sizing: border-box; 
         padding: 0;
     }
 
     main > img {
-        width: 100%; /* Imagem ocupa toda a largura do main */
-        height: auto; /* Altura ajustada automaticamente */
-        display: block; /* Remove espaços extras abaixo da imagem */
+        width: 100%; 
+        height: auto; 
+        display: block; 
         background-size: cover;
        
     }
@@ -155,8 +157,8 @@ td.cor {
     main > p.regular,
     main > section,
     main > table {
-        width: 100%; /* Elementos de texto, artigos e tabelas ocupam toda a largura do main */
-        box-sizing: border-box; /* Considera padding e borda na largura total */
+        width: 100%; 
+        box-sizing: border-box; 
         padding-left: 30px;
         padding-right: 30px;
     }
