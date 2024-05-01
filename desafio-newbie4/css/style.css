@@ -146,13 +146,16 @@ td.cor {
         background-size: cover;
        
     }
+
     section > article.border {
        padding-bottom: 20px;
     }
+
     section > article{
        margin: auto;
        
     }
+    
     main > p.title, 
     main > p.regular,
     main > section,
