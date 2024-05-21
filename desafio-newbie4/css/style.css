@@ -42,7 +42,7 @@ main {
 }
 
 main > img {
-    width: 500px;
+    width: 100%;
     border-radius: 6px;
 }
 
@@ -143,8 +143,7 @@ td.cor {
         width: 100%; 
         height: auto; 
         display: block; 
-        background-size: cover;
-       
+        background-size: cover;      
     }
 
     section > article.border {
