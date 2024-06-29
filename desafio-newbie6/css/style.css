@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    height: 42px;
+    width: 241px;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    height: 428px;
+    width: 616px;
+    background-color: #fff;
+    box-shadow: 15px 15px 25px hsl(225, 100%, 98%);
+}
+
+.container > .efect {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%),  hsl(241, 81%, 54%));
+    border-radius:  28px;
+}
+
+.container > .efect >  h1 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color:  hsla(241, 100%, 89%, 0.905);
+    padding-top: 20px;
+}
+
+.container > .efect > .circle {
+    height: 162px;
+    width: 168px;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: auto;
+    border-radius: 50%;
+    margin-top: -25px;
+}
+
+.container > .efect > .circle > .number {
+    font-size: 3em;
+    font-weight: 800;
+    color: white;
+    padding-top: 40px;
+   
+}
+
+.container > .efect > .circle > .of {
+    font-size: 14px;
+    font-weight: 500;
+    color:  hsl(241, 100%, 89%);
+    margin-top: -55px;
+}
+
+.container > .efect > h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    color:  white;
+}
+
+.container > .efect > .text {
+    font-size: 14px;
+    color:  hsl(241, 100%, 89%);
+}
+
+.container > .content {
+    height: 100%;
+    width: 100%;
+}
+
+.container > .content > h3 {
+    text-align: left;
+    text-indent: 35px;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.container > .content > .light {
+    background-color: #fff7f6;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.container > .content > .d-light {
+    background-color: hsl(42, 100%, 98%);
+    margin: auto;
+    margin-top: 15px;
+}
+
+.container > .content > .dark {
+    background-color: hsl(173, 53%, 96%);
+    margin: auto;
+    margin-top: 15px;
+}
+
+.container > .content > .dark-d {
+    background-color: hsl(240, 71%, 97%);
+    margin: auto;
+    margin-top: 15px;
+}
+
+.align {
+    padding-top: 8px;
+}
+
+img {
+    height: 14px;
+    width: 17px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+strong {
+    font-size: 14px;
+}
+
+span {
+    color: hsl(330, 4%, 67%);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.r {
+    color:  hsl(0, 100%, 67%);
+    padding-right: 75px;
+}
+
+.m {
+    color: hsl(39, 100%, 56%);
+    padding-right: 75px;
+}
+
+.ve {
+    color:  hsl(166, 100%, 37%);
+    padding-right: 86px;
+}
+
+.v {
+    color:  hsl(234, 85%, 45%);
+    padding-right: 87px;
+}
+
+.container > .content > button {
+    display: block;
+    margin: auto;
+    width: 241px;
+    height: 46px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.container > .content > button:hover {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%),  hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .container > .efect {
+        border-radius: 0 0 28px 28px;
+    }
+    .container > .efect >  h1 {
+        font-size: 15px;
+    }
+
+    .container > .efect > .circle {
+        height: 144px;
+        width: 141px;
+    }
+    .container > .efect > .circle > .number {
+        font-size: 2.5em;
+    }
+    
+    .container > .efect > .circle > .of {
+        font-size: 14px;
+        font-weight: 500;
+        color:  hsl(241, 100%, 89%);
+        margin-top: -45px;
+    }
+
+    .container > .efect > h2 {
+        font-size: 1.1em;
+        font-weight: 700;
+        color:  white;
+    }
+    .container > .efect > .text {
+        padding: 0 70px;    
+    }
+
+    .container > .efect {
+        height: 78%;
+        width: 100%;
+    }
+
+    .container > .content > h3 {
+        margin-top: 20px;
+    }
+    .container > .content > button {
+        height: 57px;
+        width: 315px;
+        margin-top: 20px;
+    }
+
+    div {
+        height: 57px;
+        width: 315px;
+        border-radius: 8px;
+    }
+
+    .align {
+        padding-top: 15px;
+    }
+
+    img {
+        padding-left: 15px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .r {
+        padding-right: 145px;
+    }
+    
+    .m {
+        padding-right: 145px;
+    }
+    
+    .ve {
+        padding-right: 156px;
+    }
+    
+    .v {
+        padding-right: 157px;
+    }
+    
+}
