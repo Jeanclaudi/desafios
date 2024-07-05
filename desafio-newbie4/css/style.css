@@ -20,22 +20,23 @@
     src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf);
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    font-size: 16px;
-    background-color: hsl(30, 54%, 90%);
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(30, 54%, 90%);
+}
+
 
 main {
     height: auto;
     width: 500px;
+    margin: auto auto;
     background-color: white;
     border-radius: 16px;
     padding: 30px;
@@ -44,6 +45,7 @@ main {
 main > img {
     width: 100%;
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 main > p.title {
@@ -65,12 +67,19 @@ article.border {
 
 article.first {
     border-radius: 6px;
-    padding: 2px; 
+    padding: 15px 0; 
     background-color:  hsl(330, 100%, 98%);
+}
+
+article.first ul {
+/*    list-style-position: inside; */
+    list-style: none;
 }
 
 article.first > .preparation {
     text-indent: 17px;
+    font-size: 1.1rem;
+    margin: 10px 0;
     font-family: 'outfit-semibold';
     color:  hsl(332, 51%, 32%);
 }
@@ -94,7 +103,8 @@ span {
 
 p.title2 {
     font-family: 'youngSerif';
-    font-size: 1.5em;
+    font-size: 1.2rem;
+    margin: 15px 0;
     color: hsl(14, 45%, 36%);
 }
 
@@ -137,13 +147,14 @@ td.cor {
         overflow-y: auto;
         box-sizing: border-box; 
         padding: 0;
+        border-radius: 0;
     }
 
     main > img {
         width: 100%; 
         height: auto; 
-        display: block; 
-        background-size: cover;      
+        border-radius: 0;
+        display: block;   
     }
 
     section > article.border {
@@ -178,3 +189,4 @@ td.cor {
         padding-left: 15px;
     }
 }
+
