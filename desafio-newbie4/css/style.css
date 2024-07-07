@@ -24,21 +24,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     font-size: 16px;
     background-color: hsl(30, 54%, 90%);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden; /* Evitar rolagem horizontal */
 }
 
 main {
-    height: auto;
-    width: 500px;
+    width: 90%;
+    max-width: 749px;
     background-color: white;
     border-radius: 16px;
     padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Permitir rolagem no eixo y */
 }
 
 main > img {
@@ -47,12 +50,12 @@ main > img {
 }
 
 main > p.title {
-    font-size: 1.9em;
+    font-size: 2.5em;
     font-family: 'youngSerif';
 }
 
 main > p.regular {
-   font-size: 12px;
+   font-size: 17px;
    font-family: 'outfit-regular';
    color:  hsl(30, 10%, 34%);
    margin-bottom: 30px;
@@ -70,6 +73,7 @@ article.first {
 }
 
 article.first > .preparation {
+    font-size: 20px;
     text-indent: 17px;
     font-family: 'outfit-semibold';
     color:  hsl(332, 51%, 32%);
@@ -77,7 +81,7 @@ article.first > .preparation {
 
 main li {
     padding-left: 15px;
-    font-size: 12px;
+    font-size: 17px;
     font-family: 'outfit-bold';
     color: hsl(332, 51%, 32%);
 }
@@ -94,18 +98,23 @@ span {
 
 p.title2 {
     font-family: 'youngSerif';
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: hsl(14, 45%, 36%);
 }
 
 p.p-fim {
-    font-size: 12px;
+    font-size: 17px;
     font-family: 'outfit-regular';
     color:  hsl(30, 10%, 34%);
 }
 
+.table-container {
+    justify-content: center;
+    display: flex;
+}
+
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
 }
 
@@ -127,6 +136,7 @@ td.cor {
 
 @media only screen and (max-width: 600px) {
     body {
+        background-color: white;
         margin: 0;
         padding: 0;
     }
@@ -145,14 +155,22 @@ td.cor {
         display: block; 
         background-size: cover;      
     }
+    
+    .sec-regular {
+      margin-top: -30px;
+    }
+
+    main > p.title {
+        font-size: 2.3em;
+        font-family: 'youngSerif';
+    }
 
     section > article.border {
        padding-bottom: 20px;
     }
 
     section > article{
-       margin: auto;
-       
+         margin: auto;
     }
     
     main > p.title, 
@@ -166,9 +184,8 @@ td.cor {
     }
 
     main > p.regular {
-        font-size: 17px;
+        line-height: 18px;
     }
-
     
     p.list1, p.p-fim {
         font-size: 17px;
@@ -176,5 +193,22 @@ td.cor {
 
     .pad {
         padding-left: 15px;
+    }
+
+    main > section.sec-regular > p.regular {
+        font-family: 'outfit-regular';
+        font-size: 16px; 
+        line-height: 25px;
+        color:  hsl(30, 10%, 34%);
+    }
+
+    li > p.list1 {
+        font-size: 18px;
+        font-family: 'outfit-regular';
+        color:  hsl(30, 10%, 34%);
+    }
+
+    .first {
+        margin-top: 20px;
     }
 }
