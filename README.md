@@ -31,5 +31,11 @@
     executar desafio 6</a>
 </p>
 
+<p>
+    <a href= "https://jeanclaudi.github.io/desafios/desafio-newbie7/">
+    executar desafio 7</a>
+</p>
+
+
 
 
